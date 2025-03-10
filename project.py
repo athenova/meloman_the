@@ -33,8 +33,9 @@ class Project(CommonBlogger):
     def __init__(self, **kwargs):
         super().__init__(
             review_chat_id=-1002374309134,
-            first_post_date=datetime(2025, 3, 7),
+            first_post_date=datetime(2025, 3, 9),
             text_generator=OpenAITextGenerator(),
             topic_word_limit=100,
+            send_text_with_image=True,
             **kwargs
         )
