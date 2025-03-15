@@ -39,6 +39,6 @@ class Project(CommonBlogger):
             text_generator=OpenAITextGenerator(),
             topic_word_limit=100,
             reviewer=TelegramSender(),
-            senders=[TelegramSender(channel_id=f"@maloman_the"), InstagramSender(channel_token_name='MELOMAN_THE_TOKEN')],
+            senders=[TelegramSender(channel_id=f"@meloman_the"), InstagramSender(channel_token_name='MELOMAN_THE_TOKEN')],
             **kwargs
         )
